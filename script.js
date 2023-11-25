@@ -21,10 +21,10 @@ task.map((el) => {
 
 head.innerHTML += `
   <div class="head-text">
-  <img width="100px"  src=${el.name} alt="img">
+  <img width="100px"  src=${el.Images} alt="img">
   <div>
   <h4> <span>Name : </span>${el.lastName}</h4>
-  <h4> <span>Last name : </span>${el.Images}</h4>
+  <h4> <span>Last name : </span>${el.name}</h4>
   </div>
   <button type="button" class="del-btn btn btn-danger">Delete</button>
   </div>
