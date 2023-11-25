@@ -123,3 +123,13 @@ span {
         width: 410px;
     }
 }
+@media(max-width:479px) {
+    #header {
+        margin-left: 301px;
+    }
+}
+@media(max-width:433px) {
+    #header {
+        margin-left: 402px;
+    }
+}
