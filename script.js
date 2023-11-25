@@ -15,10 +15,8 @@ let delBtn = document.querySelector('.del-btn')
 
 function view() {
     let task = JSON.parse(localStorage.getItem("task")) || []
-  head.innerHTML = ""
- 
-task.map((el) => {
-
+    head.innerHTML = ""
+    task.map((el) => {
 head.innerHTML += `
   <div class="head-text">
   <img width="100px"  src=${el.Images} alt="img">
@@ -54,7 +52,12 @@ delBtns.forEach((btn , index) => {
 
 
 
-create.addEventListener("click", () => add());
+create.addEventListener("click", () => {
+  add()
+  input1.value = ""
+  input2.value = ""
+  input3.value = ""
+});
 
 function add() {
   let task = JSON.parse(localStorage.getItem("task")) || []
@@ -68,11 +71,8 @@ localStorage.setItem("task" , JSON.stringify(result))
 
 
 if(input1.value === "" || input2.value === "" || input3.value === "" || input1.value.trim() === "" || input2.value.trim() === "" ||input3.value.trim() === "") {
-  alert("Заполните пустое поле")
-  input1.value = ""
-input2.value = ""
-input3.value = ""
-  return
+  return alert("Заполните пустое поле")
+
 }
 
 view()
@@ -91,6 +91,7 @@ remo.addEventListener("click", () => {
   });
 
 
+  remo.style.cursor = "pointer"
 
 
 
@@ -98,7 +99,6 @@ remo.addEventListener("click", () => {
 read.addEventListener("click", () => {
   head.style.display = "block";
 });
-remo.style.cursor = "pointer"
 
 
 

@@ -71,6 +71,7 @@ button:hover{
     gap: 40px;
 }
 .head {
+    position: relative;
     overflow-y: scroll;
     width: 700px;
     height: 500px;
@@ -109,6 +110,11 @@ h4{
 span {
     font-weight: 300;
     color: rgb(26, 23, 23);
+}
+.remo {
+    position: absolute;
+    top: 6px;
+    left: 9px;
 }
 
 
