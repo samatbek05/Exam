@@ -26,7 +26,7 @@ head.innerHTML += `
   <h4> <span>Name : </span>${el.lastName}</h4>
   <h4> <span>Last name : </span>${el.Images}</h4>
   </div>
-  <button type="button" class="del-btn btn btn-danger">Danger</button>
+  <button type="button" class="del-btn btn btn-danger">Delete</button>
   </div>
   `;
 el.name = "";
