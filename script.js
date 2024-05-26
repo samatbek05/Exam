@@ -8,11 +8,6 @@ let remo = document.querySelector(".remo");
 let delBtn = document.querySelector('.del-btn') 
 
 
-
-
-
-
-
 function view() {
     let task = JSON.parse(localStorage.getItem("task")) || []
     head.innerHTML = ""
